@@ -1,0 +1,473 @@
+/* 
+colores:
+celeste claro: #def0ff (encabezado)
+negro transparente: rgba(5, 5, 7, 0.253) (fondo)
+azul claro: lightskyblue
+azul intro: #538b99 (tips)
+agua marina: #B2EDE3
+blanco: #E3E3E3
+
+fuentes
+font-family: 'Montserrat Alternates', sans-serif;
+
+1rem=16px
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body{
+    background-color: #E3E3E3;
+    font-size: 16px;
+}
+
+/* grid para estructura del sitio */
+.grid-container{
+    display: grid;
+    grid-template-areas: "encabezado"
+                         "intro"
+                         "tips"
+                         "video"
+                         "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 1vh;
+    align-items: center;
+}
+
+/* flexbox para menú */
+#encabezado{
+    grid-area: encabezado;
+}
+
+#encabezado{
+    background-color: #def0ff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#encabezado .logo a{
+    width: auto;
+    height: 80px;
+}
+
+#encabezado .menu{
+    display: flex;
+    align-items: center;
+}
+
+#encabezado .menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#encabezado .menu li a{
+    width: 0.625em;
+    padding: 0.625em;
+    margin: 0 1vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 7px;
+    display: inline-block;
+    min-width: 9.375em;
+    text-align: center;
+}
+
+#encabezado .menu li a:hover{
+    background-color: lightskyblue
+}
+
+/* INTRO HOME */
+
+#intro{
+    grid-area: intro;
+}
+
+#intro{
+    background-image: url(../img/paisaje.jpg);
+    min-height: 15.625em;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro .intro__info{
+    text-align: center;
+    background-color: rgba(5, 5, 7, 0.253);
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#intro .intro__btn{
+    padding: 0.9375em;
+    margin: 0.625em;
+    background-color: black;
+    border-radius: 7px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#intro .intro__btn a{
+    text-decoration: none;
+    color: white;
+}
+
+#intro .intro__btn:hover{
+    background-color: lightskyblue
+}
+
+/* TIPS HOME*/
+
+#tips{
+    grid-area: tips;
+    background-color: #538b99;
+}
+
+#tips h2{
+    text-align: center;
+    padding: 1vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#tips .tipsTodos{
+    display: grid;
+    grid-template-areas:"foto1 foto2 foto3"
+                         "tips1 tips2 tips3";
+    grid-template-columns: 15.625rem 15.625rem 15.625rem;
+    grid-template-rows: auto auto;
+    gap: 1vh;
+    align-items: start;
+    justify-content: space-evenly;
+    justify-items: stretch;
+    padding: 1vh;
+}
+
+.foto1{
+    grid-area: foto1;
+    height: 13.75rem;
+    width: auto;
+}
+
+.tips1{
+    grid-area: tips1;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.foto2{
+    grid-area: foto2;
+    height: 13.75rem;
+    width: auto;
+}
+
+.tips2{
+    grid-area: tips2;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.foto3{
+    grid-area: foto3;
+    height: 13.75rem;
+    width: auto;
+}
+
+.tips3{
+    grid-area: tips3;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* VIDEO HOME */
+#video{
+    grid-area: video;
+    background-color: #538b99;
+}
+
+#video h2{
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 1vh;
+}
+
+#video .video__yt{
+    display: flex;
+    justify-content: center;
+    margin: 1vh;
+}
+
+/* QUE OFRECEMOS? ofrecemos.html */
+
+/* GRID CONTAINER OFRECEMOS*/
+.grid-container2{
+    display: grid;
+    grid-template-areas: "encabezado"
+                         "ofrecemos"
+                         "ofrecemos2"
+                         "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 1vh;
+    align-items: center;
+}
+
+#ofrecemos{
+    grid-area: ofrecemos;
+}
+
+#ofrecemos{
+    background-image: url(../img/autumn.jpg);
+    min-height: 15.625em;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#ofrecemos .ofrecemos__titulo{
+    text-align: center;
+    background-color: rgba(5, 5, 7, 0.253);
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+}
+
+#ofrecemos2{
+    grid-area: ofrecemos2;
+    background-color: #B2EDE3;
+}
+
+#ofrecemos2 .ofrecemos2__todos{
+    display: grid;
+    grid-template-areas:"fotofr1 fotofr2 fotofr3 fotofr4"
+                         "textoofr1 textoofr2 textoofr3 textoofr4";
+    grid-template-columns: 15.625rem 15.625rem 15.625rem 15.625rem;
+    grid-template-rows: auto auto;
+    gap: 1vh;
+    align-items: start;
+    justify-content: space-evenly;
+    justify-items: stretch;
+    padding: 1vh;
+}
+
+.fotofr1{
+    grid-area: fotofr1;
+    height: 13.75rem;
+    width: auto;
+}
+
+.textoofr1{
+    grid-area: textoofr1;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.fotofr2{
+    grid-area: fotofr2;
+    height: 13.75rem;
+    width: auto;
+}
+
+.textoofr2{
+    grid-area: textoofr2;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.fotofr3{
+    grid-area: fotofr3;
+    height: 13.75rem;
+    width: auto;
+}
+
+.textoofr3{
+    grid-area: textoofr3;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.fotofr4{
+    grid-area: fotofr4;
+    height: 13.75rem;
+    width: auto;
+}
+
+.textoofr4{
+    grid-area: textoofr4;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* PAQUETES paquetes.html */
+
+#paquetes{
+    background-image: url(../img/river.jpg);
+    min-height: 15.625em;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#paquetes .paquetes__titulo{
+    text-align: center;
+    background-color: rgba(5, 5, 7, 0.253);
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+}
+
+#iniciopaq{
+    background-color: #B2EDE3;
+    margin-bottom: 10px;
+}
+
+/* ¿QUIENES SOMOS? quienes.html */
+
+#quienes{
+    background-image: url(../img/hintersee.jpg);
+    min-height: 15.625em;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#quienes .quienestit{
+    text-align: center;
+    background-color: rgba(5, 5, 7, 0.253);
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+}
+
+#quienesinfo{
+    background-color: #B2EDE3;
+    margin-bottom: 10px;
+}
+
+/* CONTACTO contacto.html */
+
+#contacto{
+    background-image: url(../img/beach.jpg);
+    min-height: 15.625em;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#contacto .contactotit{
+    text-align: center;
+    background-color: rgba(5, 5, 7, 0.253);
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+}
+
+#contactoform{
+    background-color: #B2EDE3;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+#footer{
+    grid-area: footer;
+    background-color: black;
+}
+
+#footer{
+    color: white;
+    padding: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+#footer .iconos a{
+    width: 1vh;
+    padding: 1vh;
+    margin: 0 1vh;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    display: inline-flex;
+}
+
+#footer .texto{
+    text-align:justify;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* ----------- MEDIA QUERIS ----------- */
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (max-width: 1200px) {
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (max-width: 992px) {
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (max-width: 768px) { 
+    .grid-container{
+        grid-template-rows: auto;}
+    #encabezado{
+        font-size: 12px;
+    }
+    #tips .tipsTodos{
+        grid-template-areas:"foto1"
+                             "tips1"
+                             "foto2"
+                             "tips2"
+                             "foto3"
+                             "tips3";
+        grid-template-columns: 15.625rem;
+    }
+    #ofrecemos2 .ofrecemos2__todos{
+        grid-template-areas:"fotofr1"
+                             "textoofr1"
+                             "fotofr2"
+                             "textoofr2"
+                             "fotofr3"
+                             "textoofr3"
+                             "fotofr4"
+                             "textoofr4";
+        grid-template-columns: 15.625rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) { 
+
+}

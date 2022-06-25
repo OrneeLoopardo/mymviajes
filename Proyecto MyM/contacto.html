@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="./img/solo logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/048d940dea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <!-- MENÚ ENCABEZADO -->
+        <Header id="encabezado">
+            <!-- LOGO -->
+            <div class="logo">
+                <a href="./index.html"><img src="./img/marymar.png" alt="logo marymar" width="150"></a>
+            </div>
+    
+            <!-- MENÚ DE NAVEGACIÓN -->
+            <nav class="menu">
+                <ul> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ofrecemos.html">¿Que ofrecemos?</a></li>
+                    <li><a href="paquetes.html">Paquetes</a></li>
+                    <li><a href="quienes.html">¿Quienes somos?</a></li>
+                    <li><a href="contacto.html">Contactanos</a></li>
+                </ul>
+            </nav>
+        </Header>
+    
+        <section id="contacto"> <!-- TITULO -->
+            <div class="contactotit">
+                <h1>Contacto</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptate!</p>
+            </div>
+        </section>
+    
+        <section id="contactoform"> <!-- FORMULARIO DE CONTACTO -->
+            <form action="enviar.php" method="get">
+                <div>
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+    
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Igrese su correo electronico">
+                </div>
+    
+                <div>
+                        <label for="paises">Elegir el pais al que queres viajar</label>
+                        <select name="paises" id="paises">
+                        <option value="00">Seleccione una opcion</option>
+                        <option value="01">Argentina</option>
+                        <option value="02">Chile</option>
+                        <option value="03">Uruguay</option>
+                    </select>
+                </div>
+    
+                <div>
+                    <label for="mes">Elegir el mes en el que queres viajar</label>
+                    <select name="mes" id="mes">
+                    <option value="00">Seleccione una opcion</option>
+                    <option value="01">Enero</option>
+                    <option value="02">Febrero</option>
+                    <option value="03">Marzo</option>
+                </select>
+                </div>
+    
+                <div>
+                    <label for="caja">Indicanos en que podemos ayudarte</label>
+                    <textarea name="caja" id="caja" cols="20" rows="10" placeholder="Detalla tu consulta lo mas posible."></textarea>
+                </div>
+    
+                <div>
+                    <input type="checkbox" name="acepto" id=""> Acepta ter. y cond. 
+                    <input type="checkbox" name="news" id=""> Deseo recibir correos.
+                </div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar todo">
+            </form>
+        </section>
+    
+        <!-- FOOTER -->
+        <div id="footer"> 
+            <div class="iconos">
+                <a href="https://www.facebook.com/marymarviajesyturismo"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://wa.me/1167415844/?text= Hola! Somos Marta y Mariana. Preguntanos."><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/marymarviajes/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <footer class="texto">
+                <p>Copyright © MarYMar Viajes y Turismo 2022</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
