@@ -357,6 +357,7 @@ body{
 #iniciopaq{
     background-color: #B2EDE3;
     margin-bottom: 10px;
+    grid-area: paquetes2;
 }
 
 #iniciopaq .iniciopaq2{
@@ -525,7 +526,9 @@ body{
 
 /* Medium devices (tablets, 768px and up)*/
 @media (max-width: 768px) { 
-    .grid-container{
+    .grid-container, 
+    .grid-container2,
+    .grid-container3{
         grid-template-rows: auto;}
     #encabezado{
         font-size: 12px;
@@ -550,9 +553,19 @@ body{
                              "textoofr4";
         grid-template-columns: 15.625rem;
     }
+    #iniciopaq .iniciopaq2 {
+            grid-template-areas:"paquete1"
+                                 "paqimg1"
+                                 "paqtext1"
+                                 "paquete2"
+                                 "paqimg2"
+                                 "paqtext2"
+                                 "paquete3"
+                                 "paqimg3"
+                                 "paqtext3";
+            grid-template-columns: 15.625rem;
+        }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (max-width: 576px) { 
-
-}
+@media (max-width: 576px) 
