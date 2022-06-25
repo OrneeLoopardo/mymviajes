@@ -317,6 +317,23 @@ body{
 
 /* PAQUETES paquetes.html */
 
+/* GRID CONTAINER PAQUETES*/
+.grid-container3{
+    display: grid;
+    grid-template-areas: "encabezado"
+                         "paquetes"
+                         "paquetes2"
+                         "footer";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 1vh;
+    align-items: center;
+}
+
+#paquetes{
+    grid-area: paquetes;
+}
+
 #paquetes{
     background-image: url(../img/river.jpg);
     min-height: 15.625em;
@@ -340,6 +357,20 @@ body{
 #iniciopaq{
     background-color: #B2EDE3;
     margin-bottom: 10px;
+}
+
+#iniciopaq .iniciopaq2{
+    display: grid;
+    grid-template-areas:"paquete1 paquete2 paquete2"
+                         "paqimg1 paqimg2 paqimg3"
+                         "paqtext1 paqtext2 paqtext3";
+    grid-template-columns: 15.625rem 15.625rem 15.625rem;
+    grid-template-rows: auto auto;
+    gap: 1vh;
+    align-items: start;
+    justify-content: space-evenly;
+    justify-items: stretch;
+    padding: 1vh;
 }
 
 /* ¿QUIENES SOMOS? quienes.html */
