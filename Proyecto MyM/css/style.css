@@ -361,16 +361,70 @@ body{
 
 #iniciopaq .iniciopaq2{
     display: grid;
-    grid-template-areas:"paquete1 paquete2 paquete2"
+    grid-template-areas:"paquete1 paquete2 paquete3"
                          "paqimg1 paqimg2 paqimg3"
                          "paqtext1 paqtext2 paqtext3";
-    grid-template-columns: 15.625rem 15.625rem 15.625rem;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     gap: 1vh;
     align-items: start;
     justify-content: space-evenly;
     justify-items: stretch;
     padding: 1vh;
+}
+
+.paquete1{
+    grid-area: paquete1;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.paqimg1{
+    grid-area: paqimg1;
+    height: 13.75rem;
+    width: auto;
+}
+
+.paqtext1{
+    grid-area: paqtext1;
+    text-align: start;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.paquete2{
+    grid-area: paquete2;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.paqimg2{
+    grid-area: paqimg2;
+    height: 13.75rem;
+    width: auto;
+}
+
+.paqtext2{
+    grid-area: paqtext2;
+    text-align: start;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.paquete3{
+    grid-area: paquete3;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.paqimg3{
+    grid-area: paqimg3;
+    height: 13.75rem;
+    width: auto;
+}
+
+.paqtext3{
+    grid-area: paqtext3;
+    text-align: start;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 /* ¿QUIENES SOMOS? quienes.html */
