@@ -1,6 +1,6 @@
 /* 
 colores:
-celeste claro: #def0ff (encabezado)
+celeste claro: #b4c5d3 (encabezado)
 negro transparente: rgba(5, 5, 7, 0.253) (fondo)
 azul claro: lightskyblue
 azul intro: #538b99 (tips)
@@ -45,7 +45,7 @@ body{
 }
 
 #encabezado{
-    background-color: #def0ff;
+    background-color: #b4c5d3;
     padding: 1rem;
     display: flex;
     flex-direction: row;
