@@ -8,9 +8,10 @@
     <link rel="shortcut icon" href="./img/solo logo.png">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/048d940dea.js" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body id="body">
-
     <div>
 
           <!-- MENÚ ENCABEZADO -->
@@ -38,6 +39,57 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, voluptate!</p>
             </div>
         </section>
+        <div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su nombre">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo electronico">
+              </div>
+              <div>
+                <h6>Seleccione el pais al que quiere viajar</h6>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Selecione una opcion</option>
+                <option value="1">Argentina</option>
+                <option value="2">Chile</option>
+                <option value="3">Uruguay</option>
+              </select>
+            </div>
+            <div>
+                <h6>Elegir el mes al que queres viajar</h6>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Selecione una opcion</option>
+                <option value="1">Enero</option>
+                <option value="2">febrero</option>
+                <option value="3">Marzo</option>
+              </select>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Indicanos en que podemos ayudarte</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Acepto ter. y cond.
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Deseo recibir correos.
+                </label>
+              </div>
+              <div id="botones del formulario">
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                  </div> <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Borrar todo</button>
+                  </div>
+              </div>
+        </div>
     
         <section id="contactoform"> <!-- FORMULARIO DE CONTACTO -->
             <form action="enviar.php" method="get">
