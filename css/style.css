@@ -571,3 +571,13 @@ body{
 @media (max-width: 576px) {
 
 }
+#formulariobot{
+    background-color: #B2EDE3;
+    text-decoration: #ffff;
+    padding-bottom: 10px;
+}
+#formulariobot .botones-del-formulario{
+    display: grid;
+    grid-template-areas:"btn btn-primary btn btn-secondary";
+    grid-template-columns: 10rem 10rem;
+}
