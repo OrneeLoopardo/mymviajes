@@ -80,8 +80,8 @@ body{
     color: white;
     background-color: black;
     border-radius: 7px;
-    display: inline-block;
-    min-width: 9.375em;
+    display: inline;
+    /*min-width: 9.375em;*/
     text-align: center;
 }
 
@@ -538,6 +538,14 @@ body{
         grid-template-rows: auto;}
     #encabezado{
         font-size: 12px;
+    }
+    #encabezado .menu ul{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
     }
     #tips .tipsTodos{
         grid-template-areas:"foto1"
