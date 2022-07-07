@@ -1,0 +1,20 @@
+#quienesinfo{
+    p{
+        color: #999;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    p{
+        a{
+            text-decoration: none;
+            color: black;
+            &:hover{
+                color: blueviolet;
+            }
+            &:visited{
+                color: pink;
+            }
+        }
+    }
+}

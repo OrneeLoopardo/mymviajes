@@ -4,4 +4,21 @@
   padding: 0;
   box-sizing: 0;
   font-family: sans-serif;
+}
+
+#quienesinfo p {
+  color: #999;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+#quienesinfo p a {
+  text-decoration: none;
+  color: black;
+}
+#quienesinfo p a:hover {
+  color: blueviolet;
+}
+#quienesinfo p a:visited {
+  color: pink;
 }/*# sourceMappingURL=main.css.map */
