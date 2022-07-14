@@ -35,3 +35,13 @@ $red-social:(
         color: $valor;
     }
 }
+
+$colores:(
+    principal: aqua,
+    base: black,
+    fondo: tomato,
+);
+
+#quienesinfo{
+    background-color: map-get($colores, principal);
+}
