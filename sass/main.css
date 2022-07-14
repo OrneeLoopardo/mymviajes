@@ -21,4 +21,37 @@
 }
 #quienesinfo p a:visited {
   color: pink;
+}
+
+/* maps */
+.icon-tw {
+  color: skyblue;
+}
+
+.icon-fb {
+  color: blue;
+}
+
+.icon-ig {
+  color: violet;
+}
+
+.icon-in {
+  color: darkblue;
+}
+
+.icon-wpp {
+  color: green;
+}
+
+.icon-tk {
+  color: blueviolet;
+}
+
+.icon-yt {
+  color: red;
+}
+
+.icon-st {
+  color: yellow;
 }/*# sourceMappingURL=main.css.map */

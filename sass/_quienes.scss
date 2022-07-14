@@ -18,3 +18,20 @@
         }
     }
 }
+
+/* maps */
+$red-social:(
+    tw: skyblue,
+    fb: blue,
+    ig: violet,
+    in: darkblue,
+    wpp: green,
+    tk: blueviolet,
+    yt: red,
+    st: yellow
+);
+@each $nombre, $valor in $red-social {
+    .icon-#{$nombre}{
+        color: $valor;
+    }
+}
