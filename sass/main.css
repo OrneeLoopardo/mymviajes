@@ -58,4 +58,60 @@
 
 #quienesinfo {
   background-color: aqua;
+}
+
+/* Extend */
+.img-mobile, .img-desktop--ful {
+  width: 100%;
+  height: auto;
+  border: 10px solid #333;
+}
+
+.img-desktop--ful {
+  display: block;
+}
+
+/* Mixin */
+.btn--danger {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: sans-serif;
+  background: lightblue;
+  color: black;
+}
+
+.btn--info {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: sans-serif;
+  background: blue;
+  color: white;
+}
+
+.btn--alert {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: sans-serif;
+  background: greenyellow;
+  color: black;
+}
+
+.btns--default {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: black;
+  background: skyblue;
 }/*# sourceMappingURL=main.css.map */

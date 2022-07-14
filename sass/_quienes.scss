@@ -45,3 +45,53 @@ $colores:(
 #quienesinfo{
     background-color: map-get($colores, principal);
 }
+
+/* Extend */ 
+.img-mobile{
+    width: 100%;
+    height: auto;
+    border: 10px solid #333;
+}
+.img-desktop--ful{
+    @extend .img-mobile;
+    display: block;
+}
+
+/* Mixin */
+@mixin btn {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.btn--danger{
+    @include btn;
+    background: lightblue;
+    color: black;
+}
+.btn--info{
+    @include btn;
+    background: blue;
+    color: white;
+}
+.btn--alert{
+    @include btn;
+    background: greenyellow;
+    color: black;
+}
+
+@mixin btns ($col, $bg){
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: $col;
+    background: $bg;
+}
+.btns--default{
+    @include btns(black, skyblue)
+}
