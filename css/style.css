@@ -232,7 +232,7 @@ body{
 }
 
 #ofrecemos{
-    background-image: url(../img/autumn.jpg);
+    background-image: url(../img/roadfondo.jpg);
     min-height: 15.625em;
     background-attachment: fixed;
     background-size: cover;
@@ -338,7 +338,7 @@ body{
 }
 
 #paquetes{
-    background-image: url(../img/river.jpg);
+    background-image: url(../img/montañanevada.jpg);
     min-height: 15.625em;
     background-attachment: fixed;
     background-size: cover;
@@ -463,7 +463,7 @@ body{
 /* CONTACTO contacto.html */
 
 #contacto{
-    background-image: url(../img/beach.jpg);
+    background-image: url(../img/playa.jpg);
     min-height: 15.625em;
     background-attachment: fixed;
     background-size: cover;
