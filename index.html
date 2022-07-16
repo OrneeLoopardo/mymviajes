@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- SEO -->
     <title>MarYMar Viajes</title>
     <meta name="keywords" content="viajes, vuelos, trenes, barcos, micros, exterior, disfrutar, viajar, travel">
@@ -17,29 +18,24 @@
     <div class="grid-container">
 
         <!-- MENÚ ENCABEZADO -->
+        <!-- MENÚ ENCABEZADO -->
         <Header id="encabezado">
             <!-- LOGO -->
             <div class="logo">
-                <nav class="navbar bg-light">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="./index.html">
-                        <img src="./img/marymar.png" alt="" width="150" height="150" class="d-inline-block align-text-top">
-                      </a>
-                    </div>
-                  </nav>
+                <a href="./index.html"><img src="./img/marymar.png" alt="logo marymar" width="150"></a>
             </div>
     
             <!-- MENÚ DE NAVEGACIÓN -->
             <nav class="menu">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./ofrecemos.html">¿Que ofrecemos?</a></li>
-                    <li><a href="./paquetes.html">Paquetes</a></li>
-                    <li><a href="./quienes.html">¿Quienes somos?</a></li>
-                    <li><a href="./contacto.html">Contactanos</a></li>
-                </ul>
-            </nav>
-        </Header>
+              <ul>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./ofrecemos.html">¿Que ofrecemos?</a></li>
+                  <li><a href="./paquetes.html">Paquetes</a></li>
+                  <li><a href="./quienes.html">¿Quienes somos?</a></li>
+                  <li><a href="./contacto.html">Contactanos</a></li>
+              </ul>
+          </nav>
+      </Header>
     
         <!-- INTRO ESLOGAN -->
         <main id="intro"> 
@@ -58,19 +54,27 @@
                 Algunos tips para mejorar tus viajes:
             </h2>
             <article class="tipsTodos">
-                <img class="foto1" src="./img/Mujer con mucho equipaje..jpeg" alt="Equipaje" width="200" height="auto">
-                <div class="tips1">
-                    <p>Se trata de un consejo básico, aunque solemos pasar de él: <b>no viajes con exceso de equipaje.</b></p>
+                <div class="card1" style="width: 18rem;">
+                    <img src="./img/equipajeExceso.jpg" class="card-img-top" alt="Exceso de equipaje">
+                    <div class="card-body">
+                      <h5 class="card-title">Equipaje</h5>
+                      <p class="card-text">Se trata de un consejo básico, aunque solemos pasar de él: <b>no viajes con exceso de equipaje.</b></p>
+                    </div>
                 </div>
-                <img class="foto2" src="./img/documentos.jpg" alt="documentos" width="200" height="auto">
-                <div class="tips2">
-                    <p>Asegurate de cargar todos tus documentos a mano, si es necesario hace una lista de los mismos.</p>
+                <div class="card2" style="width: 18rem;">
+                    <img src="./img/pasaporte.jpg" class="card-img-top" alt="documentos">
+                    <div class="card-body">
+                      <h5 class="card-title">Documentación</h5>
+                      <p class="card-text">Asegurate de cargar todos tus documentos a mano, si es necesario hace una lista de los mismos.</p>
+                    </div>
                 </div>
-                <img class="foto3" src="./img/Adaptador.jpg" alt="Adaptador" width="200" height="auto">
-                <div class="tips3">
-                    <p>No te olvides de llevar un adaptador. Recorda que no en todo el mundo utilizamos el mismo enchufe.</p>
+                <div class="card3" style="width: 18rem;">
+                    <img src="./img/cable.jpg" class="card-img-top" alt="Adaptador">
+                    <div class="card-body">
+                      <h5 class="card-title">Adaptador</h5>
+                      <p class="card-text">No te olvides de llevar un adaptador. Recorda que no en todo el mundo utilizamos el mismo enchufe.</p>
+                    </div>
                 </div>
-            </article>
         </section>
     
         <!-- VIDEO HOME -->
