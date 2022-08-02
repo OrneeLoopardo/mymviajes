@@ -18,6 +18,7 @@ font-family: 'Montserrat Alternates', sans-serif;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
 }
 
 body{
@@ -46,48 +47,38 @@ body{
 }
 
 #encabezado{
-    /*background-color: #b4c5d3;*/
-    padding: 1rem;
     display: flex;
-    flex-direction: row;
+    top: 0.1px;
+    z-index: 2;
+    left: 33%;
+    opacity: 85%;
     justify-content: space-between;
+    color: black;
 }
 
 #encabezado .logo a{
     width: auto;
-    height: 80px;
+    height: auto;
 }
 
-#encabezado .menu{
-    display: flex;
-    align-items: center;
+#encabezado .navbar-nav{
+    gap: 10px;
 }
 
-#encabezado .menu ul{
+#encabezado .navbar-nav .navbarra{
+    color: black;
     list-style: none;
-    display: flex;
-    flex-direction: row;
-}
-
-#encabezado .menu li a{
-    width: 0.625em;
-    padding: 0.625em;
-    margin: 0 1vh;
-    font-family: 'Montserrat Alternates', sans-serif;
-    text-align: center;
-    list-style-type: none;
     text-decoration: none;
-    color: white;
-    background-color: black;
-    border-radius: 7px;
-    display: inline;
-    /*min-width: 9.375em;*/
-    text-align: center;
+    font-size: 1.2em;
 }
 
-#encabezado .menu li a:hover{
-    background-color: lightskyblue
-}
+#encabezado .navbar-nav .navbarra:hover {
+    color: rgb(0, 0, 102);
+  }
+
+#encabezado .navbar-nav .dropdown-item {
+    font-weight: 900;
+  }
 
 /* INTRO HOME */
 
@@ -586,7 +577,6 @@ body{
 
 }
 #formulariobot{
-    background-color: #B2EDE3;
     text-decoration: #ffff;
     padding-bottom: 10px;
 }
