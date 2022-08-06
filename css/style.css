@@ -39,6 +39,7 @@ body{
     grid-template-rows: auto auto auto auto auto;
     gap: 1vh;
     align-items: center;
+    
 }
 
 /* flexbox para menú */
