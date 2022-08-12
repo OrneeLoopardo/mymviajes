@@ -570,6 +570,10 @@ body{
                                  "paqtext3";
             grid-template-columns: 15.625rem;
         }
+    #video{
+        width: auto;
+        height: auto;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
